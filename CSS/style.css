@@ -1,0 +1,7 @@
+body {
+  scroll-behavior: smooth;
+}
+
+img {
+  object-fit: cover;
+}

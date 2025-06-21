@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mark Zuckerberg Biography</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-blue-600">Zuckerberg Bio</h1>
+      <ul class="flex gap-6 text-sm font-semibold">
+        <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#achievements" class="hover:text-blue-500">Achievements</a></li>
+        <li><a href="#timeline" class="hover:text-blue-500">Timeline</a></li>
+        <li><a href="#personal" class="hover:text-blue-500">Personal Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-12 bg-gradient-to-r from-blue-100 to-white">
+    <img src="./img/zuckerberg.jpg" alt="Mark Zuckerberg" class="mx-auto w-40 h-40 rounded-full shadow-md" />
+    <h2 class="text-3xl font-bold mt-4">Mark Zuckerberg</h2>
+    <p class="max-w-xl mx-auto mt-4 text-gray-700">Co-founder of Facebook and CEO of Meta Platforms. A visionary in technology and digital communication, he has reshaped how the world connects.</p>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="py-10 container mx-auto">
+    <h3 class="text-2xl font-bold mb-6 text-center">Key Achievements</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="font-semibold text-lg">Founded Facebook</h4>
+        <p>Launched Facebook in 2004 from his Harvard dorm, transforming social media forever.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="font-semibold text-lg">Global Expansion</h4>
+        <p>Facebook became the world's largest social network with over 2.9 billion active users.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="font-semibold text-lg">Meta and Virtual Reality</h4>
+        <p>Rebranded Facebook to Meta, focusing on AR/VR and building the metaverse.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="font-semibold text-lg">Chan Zuckerberg Initiative</h4>
+        <p>Founded in 2015 with his wife, supporting health, education, and scientific research.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline" class="bg-gray-100 py-10">
+    <div class="container mx-auto">
+      <h3 class="text-2xl font-bold mb-6 text-center">Development Timeline</h3>
+      <ul class="space-y-4 text-center">
+        <li><strong>2004:</strong> Launched Facebook from Harvard.</li>
+        <li><strong>2012:</strong> Acquired Instagram.</li>
+        <li><strong>2014:</strong> Bought WhatsApp and Oculus VR.</li>
+        <li><strong>2021:</strong> Facebook rebranded to Meta Platforms Inc.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Personal Information -->
+  <section id="personal" class="py-10 container mx-auto">
+    <h3 class="text-2xl font-bold mb-6 text-center">Relevant Personal Information</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <p><strong>Full Name:</strong> Mark Elliot Zuckerberg</p>
+        <p><strong>Born:</strong> May 14, 1984, White Plains, New York</p>
+        <p><strong>Education:</strong> Harvard University (did not graduate)</p>
+        <p><strong>Family:</strong> Married to Priscilla Chan, 3 children</p>
+      </div>
+      <div>
+        <p><strong>Famous Quote:</strong> "The biggest risk is not taking any risk."</p>
+        <p><strong>Interests:</strong> Technology, AI, reading, programming</p>
+        <p><strong>Current Role:</strong> CEO of Meta Platforms Inc.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-4 mt-10">
+    <p>© <span id="year"></span> Wilder Caicedo. All rights reserved.</p>
+    <p>Academic project – Biography of Mark Zuckerberg</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
